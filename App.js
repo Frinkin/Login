@@ -7,7 +7,7 @@ import Lago from './components/Logo';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Lago srck="../assets/q6p8QmUl_400x400.png"/>
+      <Lago/>
       <InputBox txtlabel="Account"/>
       <InputBox txtlabel="Password"/>
       <Buttton label="Why so serious?"/>
