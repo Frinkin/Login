@@ -1,20 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,Button,Alert, Text, View, ImageComponent } from 'react-native';
+import Buttton from './components/Buttons';
+import InputBox from './components/InputBox';
+import Lago from './components/Logo';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Lago srck="../assets/q6p8QmUl_400x400.png"/>
+      <InputBox txtlabel="Account"/>
+      <InputBox txtlabel="Password"/>
+      <Buttton label="Why so serious?"/>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+  container:{
+    height:'100%',
+    width:'100%',
+    display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
+    alignItems:'center',
   },
 });
